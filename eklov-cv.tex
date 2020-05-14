@@ -6,45 +6,20 @@
 % available at http://www.latex-project.org/lppl/.
 
 
-\documentclass[11pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
-
-% moderncv themes
-\moderncvstyle{classic}                             % style options are 'casual' (default), 'classic', 'banking', 'oldstyle' and 'fancy'
-\moderncvcolor{blue}                               % color options 'black', 'blue' (default), 'burgundy', 'green', 'grey', 'orange', 'purple' and 'red'
-%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
-%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
-
-% character encoding
-%\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
-%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+\documentclass[11pt,a4paper,sans]{moderncv}
+\moderncvstyle{classic}
+\moderncvcolor{blue}
 
 % adjust the page margins
 \usepackage[scale=0.75]{geometry}
-\setlength{\hintscolumnwidth}{3.6cm}                % if you want to change the width of the column with the dates
-%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+\setlength{\hintscolumnwidth}{3.6cm}
 
-% personal data
 \name{David}{Eklov}
 \address{290 South Castanya Way}{94028 Menlo Park, CA}
 \phone[mobile]{+1~(512)~423~9232}
 \email{david.eklov@gmail.com}
 
-
-% bibliography adjustements (only useful if you make citations in your resume, or print a list of publications using BibTeX)
-%   to show numerical labels in the bibliography (default is to show no labels)
-\makeatletter\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}\makeatother
-%   to redefine the bibliography heading string ("Publications")
-%\renewcommand{\refname}{Articles}
-
-% bibliography with mutiple entries
-%\usepackage{multibib}
-%\newcites{book,misc}{{Books},{Others}}
-%----------------------------------------------------------------------------------
-%            content
-%----------------------------------------------------------------------------------
 \begin{document}
-%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
-%-----       resume       ---------------------------------------------------------
 \makecvtitle
 
 Software architect with deep experience in a wide variety of areas. Have worked
@@ -69,7 +44,7 @@ our customers’ software services reported by their users.
 \item Frontend and Backend - 7 engineers
 \item Data Science and Machine Learning - 5 engineers
 \end{itemize}
-\item Architected, lead and contributed to the implementations of
+\item Architected, lead and contributed to the development of
 \begin{itemize}
 \item Kubernetes based backend with 15+ micro services
 \item Scalable data pipeline including state-of-the-art ML/NLP models
@@ -100,8 +75,8 @@ and Android bring-up.
 \item Worked on source-to-source compiler, written in Scala, for compiling a pseudo code
 description of the ARM instruction set into optimized C++ code used to simulate
 instructions in high-performance, multicore CPU model.
-\item Developed and maintained user-space tools and Linux drivers for proprietary perfor-
-mance monitoring units. Helped configure and tune the kernel and system software
+\item Developed and maintained user-space tools and Linux drivers for proprietary
+performance monitoring units. Helped configure and tune the kernel and system software
 for other teams working with Linux and Android workloads.
 \end{itemize}
 }
@@ -135,6 +110,41 @@ compiler optimizations.
 
 \cventry{Sep, 2001 -- Dec, 2006}{M.Sc.}{Chalmers University of Technology}{Gothenburg, Sweden}{}{
 Electrical Engineering and Applied Mathematics
+}
+
+\section{Software and Services}
+\subsection{Languages}
+\cvitem{C} {\small
+Firmware, kernel and system-level code
+}
+\cvitem{C++} {\small
+CPU and SoC simulators, discrete event simulators and system-level code
+}
+\cvitem{Python} {\small
+Machine learning models, data analysis and processing and microservices
+}
+\cvitem{Scala} {\small
+Source code parsers, analysis and optimization passes, back-end code generation
+}
+
+\subsection{Technologies}
+\cvitem{} {\small
+Docker, Kubernetes, Helm, Elasticsearch, DynamoDB, Kinesis, Terraform
+}
+
+\subsection{Services}
+\cvitem{} {\small
+Github, CircleCI, Drone CI, Datadog, Papertrail, Pingdom, AWS, Google Cloud, Crowdflower, Groundtruth
+}
+
+\subsection{Libraries}
+\cvitem{} {\small
+Tensorflow 2.0/Keras, Huggingface Transformers, scikit-learn, numpy, Pandas, Flask, Cats, fs2, http4s, Doobie
+}
+
+\subsection{Operating Systems}
+\cvitem{} {\small
+Ubuntu, Gentoo, OSX, Android (AOSP)
 }
 
 \section{Publications}
